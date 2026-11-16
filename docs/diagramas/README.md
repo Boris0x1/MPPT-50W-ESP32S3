@@ -1,0 +1,1 @@
+Colocar aquí los ocho diagramas de flujo proporcionados por Codex, indicando versión, nombre del algoritmo, parámetros y ruta/función del código correspondiente. No se incluyen en este paquete porque todavía no fueron adjuntados.

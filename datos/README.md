@@ -1,0 +1,1 @@
+Colocar aquí los CSV y MAT originales con sus sumas SHA-256 y condiciones de adquisición. La campaña de 175 corridas y las 15 curvas I–V no se incluyen todavía porque no forman parte de este ZIP de firmware.
