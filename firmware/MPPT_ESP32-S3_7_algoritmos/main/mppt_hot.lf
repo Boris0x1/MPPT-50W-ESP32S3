@@ -1,0 +1,11 @@
+# Colocacion de codigo, sin cambiar fuentes ni precision de los algoritmos.
+[mapping:mppt_compute_hot]
+archive: libmppt.a
+entries:
+    * (noflash)
+
+[mapping:mppt_adapter_hot]
+archive: libmain.a
+entries:
+    mppt_control (noflash)
+    quiet_window (noflash)
