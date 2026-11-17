@@ -1,0 +1,8 @@
+﻿N,Name,MATLAB file,Simulink kernel,Gain or step,Mode,Periodic probing interval (s)
+1,P&O,simulacion/algoritmos/po_mppt.m,simulacion/nucleos_simulink/mppt_unificado_50w.m,0.004,0,1
+2,INC,simulacion/algoritmos/inc_mppt.m,simulacion/nucleos_simulink/mppt_unificado_50w.m,0.004,1,1
+3,Meng V/I,simulacion/algoritmos/meng_vi_mppt.m,simulacion/nucleos_simulink/mppt_unificado_50w.m,0.002,2,0
+4,Adaptive Meng,simulacion/algoritmos/adaptive_meng_mppt.m,simulacion/nucleos_simulink/mppt_extendido_50w.m,0.032,7,1
+5,P&O with probing,simulacion/algoritmos/po_with_probing_mppt.m,simulacion/nucleos_simulink/mppt_unificado_50w.m,0.002,6,1
+6,Adaptive Meng with probing,simulacion/algoritmos/adaptive_meng_with_probing_mppt.m,simulacion/nucleos_simulink/mppt_combinacion_mejorada_50w.m,0.024,8,1
+7,Adaptive Meng without periodic probing,simulacion/algoritmos/adaptive_meng_without_probing_mppt.m,simulacion/nucleos_simulink/mppt_combinacion_mejorada_50w.m,0.024,8,0

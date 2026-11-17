@@ -1,0 +1,50 @@
+{
+  "seleccion": {
+    "PO": 0.004,
+    "INC": 0.004
+  },
+  "puntuaciones": [
+    {
+      "control": "PO",
+      "paso": 0.001,
+      "media_eta_E": 87.033049564892238
+    },
+    {
+      "control": "PO",
+      "paso": 0.002,
+      "media_eta_E": 89.143734750666269
+    },
+    {
+      "control": "PO",
+      "paso": 0.004,
+      "media_eta_E": 94.019693842682656
+    },
+    {
+      "control": "PO",
+      "paso": 0.008,
+      "media_eta_E": 93.912275479451736
+    },
+    {
+      "control": "INC",
+      "paso": 0.001,
+      "media_eta_E": 86.754066379311283
+    },
+    {
+      "control": "INC",
+      "paso": 0.002,
+      "media_eta_E": 89.053592936995244
+    },
+    {
+      "control": "INC",
+      "paso": 0.004,
+      "media_eta_E": 94.021025640418827
+    },
+    {
+      "control": "INC",
+      "paso": 0.008,
+      "media_eta_E": 93.949281931629073
+    }
+  ],
+  "protocolo_sha256": "d0ebee36bf3bdf37c87c3abdce1ab0c8147b9a44205be873320c1381ac591fa1",
+  "fecha_utc": "13-Nov-2026 00:17:58"
+}

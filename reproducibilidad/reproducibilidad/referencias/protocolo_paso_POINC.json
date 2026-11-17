@@ -1,0 +1,37 @@
+{
+  "fecha_utc": "2026-11-13T00:05:40.091459+00:00",
+  "objetivo": "Sensibilidad y seleccion de paso fijo para P&O e INC sin modificar la combinacion original ni sus ablaciones.",
+  "panel_W": 50.005,
+  "paso_electrico_s": 2e-06,
+  "periodo_control_s": 0.002,
+  "pasos": [
+    0.001,
+    0.002,
+    0.004,
+    0.008
+  ],
+  "controles": [
+    "PO",
+    "INC"
+  ],
+  "perfiles_ajuste": [
+    "U2_rampa",
+    "PSC_moderado",
+    "X1_escalones_y_carga"
+  ],
+  "perfiles_evaluacion": [
+    "E1_escalones_articulo",
+    "E2_rampa20_articulo",
+    "E3_rampa50_articulo",
+    "PSC_fuerte",
+    "PSC_dinamico",
+    "X3_lobulo_remoto",
+    "X5_lobulos_secundarios"
+  ],
+  "criterio": "Maximizar la media aritmetica de eta_E en los tres perfiles de ajuste, ponderacion igual por perfil. En empate a 1e-9 pp elegir el menor paso. Un solo paso por controlador para los diez perfiles.",
+  "alcance": "Los perfiles ya eran conocidos. La separacion evita seleccionar con los siete perfiles de evaluacion en esta revision; no constituye validacion externa ciega. Presupuesto igual entre PO e INC; controles adaptativos conservan el diseno historico, sin afirmar igualdad del esfuerzo historico de desarrollo.",
+  "reutilizacion": "Las veinte corridas originales con h=0.002 conservan sus archivos y hashes. Las demas corridas se generan en este subdirectorio.",
+  "modelo_sha256": "6896a867f7f5d21dd32057c8b6facd566c9a05261815bfaa18c0e15a1aea38c7",
+  "controlador_sha256": "03432af1d82c238e8e3f7e34e02c019ddaa3f725e8dc74ac545fb0db82335c5c",
+  "manifiesto_original_sha256": "13b153de7601148bbaced0e860fc65d39838e8f401b9685663a094b002988a2d"
+}

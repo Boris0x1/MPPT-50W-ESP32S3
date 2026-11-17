@@ -1,0 +1,201 @@
+{
+  "matlab": "26.1.0.3346908 (R2026a) Update 5",
+  "passed": true,
+  "algorithms": [
+    {
+      "algorithm": "P&O",
+      "file": "po_mppt",
+      "passed": true,
+      "samples_compared": 62014,
+      "cases": 14,
+      "max_abs_difference": 0,
+      "diagnostic_phase_counts": [
+        0,
+        0,
+        0,
+        0,
+        62014,
+        0
+      ],
+      "scan_type_counts": [
+        62014,
+        0,
+        0,
+        0
+      ],
+      "lower_limit_samples": 19327,
+      "upper_limit_samples": 6545,
+      "hold_samples": 20966,
+      "invalid_input_matches_original": true,
+      "reset_initial_duty_verified": true
+    },
+    {
+      "algorithm": "INC",
+      "file": "inc_mppt",
+      "passed": true,
+      "samples_compared": 62014,
+      "cases": 14,
+      "max_abs_difference": 0,
+      "diagnostic_phase_counts": [
+        0,
+        0,
+        0,
+        0,
+        62014,
+        0
+      ],
+      "scan_type_counts": [
+        62014,
+        0,
+        0,
+        0
+      ],
+      "lower_limit_samples": 19328,
+      "upper_limit_samples": 6513,
+      "hold_samples": 21207,
+      "invalid_input_matches_original": true,
+      "reset_initial_duty_verified": true
+    },
+    {
+      "algorithm": "Meng V/I",
+      "file": "meng_vi_mppt",
+      "passed": true,
+      "samples_compared": 62014,
+      "cases": 14,
+      "max_abs_difference": 0,
+      "diagnostic_phase_counts": [
+        0,
+        0,
+        0,
+        0,
+        62014,
+        0
+      ],
+      "scan_type_counts": [
+        62014,
+        0,
+        0,
+        0
+      ],
+      "lower_limit_samples": 15255,
+      "upper_limit_samples": 12151,
+      "hold_samples": 41334,
+      "invalid_input_matches_original": true,
+      "reset_initial_duty_verified": true
+    },
+    {
+      "algorithm": "Adaptive Meng",
+      "file": "adaptive_meng_mppt",
+      "passed": true,
+      "samples_compared": 62014,
+      "cases": 14,
+      "max_abs_difference": 0,
+      "diagnostic_phase_counts": [
+        0,
+        0,
+        0,
+        0,
+        62014,
+        0
+      ],
+      "scan_type_counts": [
+        62014,
+        0,
+        0,
+        0
+      ],
+      "lower_limit_samples": 35442,
+      "upper_limit_samples": 13403,
+      "hold_samples": 15901,
+      "invalid_input_matches_original": true,
+      "reset_initial_duty_verified": true
+    },
+    {
+      "algorithm": "P&O with probing",
+      "file": "po_with_probing_mppt",
+      "passed": true,
+      "samples_compared": 62014,
+      "cases": 14,
+      "max_abs_difference": 0,
+      "diagnostic_phase_counts": [
+        140,
+        3235,
+        3919,
+        36447,
+        18273,
+        0
+      ],
+      "scan_type_counts": [
+        50490,
+        5490,
+        1489,
+        4545
+      ],
+      "lower_limit_samples": 5082,
+      "upper_limit_samples": 3393,
+      "hold_samples": 36447,
+      "invalid_input_matches_original": true,
+      "reset_initial_duty_verified": true
+    },
+    {
+      "algorithm": "Adaptive Meng with probing",
+      "file": "adaptive_meng_with_probing_mppt",
+      "passed": true,
+      "samples_compared": 62014,
+      "cases": 14,
+      "max_abs_difference": 0,
+      "diagnostic_phase_counts": [
+        140,
+        1663,
+        2161,
+        41530,
+        16520,
+        0
+      ],
+      "scan_type_counts": [
+        55196,
+        3715,
+        393,
+        2710
+      ],
+      "lower_limit_samples": 4722,
+      "upper_limit_samples": 7394,
+      "hold_samples": 41530,
+      "invalid_input_matches_original": true,
+      "reset_initial_duty_verified": true
+    },
+    {
+      "algorithm": "Adaptive Meng without periodic probing",
+      "file": "adaptive_meng_without_probing_mppt",
+      "passed": true,
+      "samples_compared": 62014,
+      "cases": 14,
+      "max_abs_difference": 0,
+      "diagnostic_phase_counts": [
+        140,
+        861,
+        1396,
+        44588,
+        15029,
+        0
+      ],
+      "scan_type_counts": [
+        58297,
+        3717,
+        0,
+        0
+      ],
+      "lower_limit_samples": 4153,
+      "upper_limit_samples": 6764,
+      "hold_samples": 44588,
+      "invalid_input_matches_original": true,
+      "reset_initial_duty_verified": true
+    }
+  ],
+  "scope": "Exact replay equivalence to archived MATLAB references; not closed-loop validation.",
+  "new_plant_simulations": 0,
+  "hardware_tests_performed": false,
+  "experimental_trace_rows": 5002,
+  "software_test_signals_are_measurements": false,
+  "ablation_only_config_index_changed": 10
+}

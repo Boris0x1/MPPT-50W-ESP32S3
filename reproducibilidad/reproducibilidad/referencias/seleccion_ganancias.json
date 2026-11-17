@@ -1,0 +1,51 @@
+{
+  "codigo_sha256": "6fb54ca0c6caa40a921162131cbf3ee5a48a5c19ce650d8a9c11e804e07dc257",
+  "protocolo_sha256": "fa49818ba71fc6b9e79d6f6790968f4906aae9760e4ccf5f016034215f2e753a",
+  "seleccion": {
+    "Meng_ext": 0.032,
+    "Combinacion_ext": 0.024
+  },
+  "puntuaciones": [
+    {
+      "control": "Meng_ext",
+      "ganancia": 0.008,
+      "media_eta_E": 93.810657839022042
+    },
+    {
+      "control": "Meng_ext",
+      "ganancia": 0.016,
+      "media_eta_E": 94.7917984618744
+    },
+    {
+      "control": "Meng_ext",
+      "ganancia": 0.024,
+      "media_eta_E": 95.0621147428745
+    },
+    {
+      "control": "Meng_ext",
+      "ganancia": 0.032,
+      "media_eta_E": 95.138156818054483
+    },
+    {
+      "control": "Combinacion_ext",
+      "ganancia": 0.008,
+      "media_eta_E": 89.729296155966338
+    },
+    {
+      "control": "Combinacion_ext",
+      "ganancia": 0.016,
+      "media_eta_E": 94.8225528201582
+    },
+    {
+      "control": "Combinacion_ext",
+      "ganancia": 0.024,
+      "media_eta_E": 95.043895955073253
+    },
+    {
+      "control": "Combinacion_ext",
+      "ganancia": 0.032,
+      "media_eta_E": 90.090572393386523
+    }
+  ],
+  "fecha_utc": "13-Nov-2026 05:25:14"
+}

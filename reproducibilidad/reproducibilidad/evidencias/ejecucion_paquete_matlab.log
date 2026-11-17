@@ -1,0 +1,8 @@
+PASS P&O: 62014 samples, max difference 0
+PASS INC: 62014 samples, max difference 0
+PASS Meng V/I: 62014 samples, max difference 0
+PASS Adaptive Meng: 62014 samples, max difference 0
+PASS P&O with probing: 62014 samples, max difference 0
+PASS Adaptive Meng with probing: 62014 samples, max difference 0
+PASS Adaptive Meng without periodic probing: 62014 samples, max difference 0
+ALL_SEVEN_MATLAB_REFERENCES_PASS
