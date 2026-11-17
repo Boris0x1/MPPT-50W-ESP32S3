@@ -1,0 +1,15 @@
+﻿family,variant,M,A,S,F,fixed_step_without_adaptation
+Base,Complete,1,1,1,,0.002
+Base,Without memory,0,1,1,,0.002
+Base,Without adaptation,1,0,1,,0.002
+Base,Memory and adaptation disabled / previous supervisor,0,0,1,,0.002
+Base,Without probing,1,1,0,,0.002
+Adaptive Meng,Complete,1,1,,,0.004
+Adaptive Meng,Without memory,0,1,,,0.004
+Adaptive Meng,Without adaptation,1,0,,,0.004
+Adaptive Meng with probing,Complete final,1,1,1,1,0.004
+Adaptive Meng with probing,Without memory,0,1,1,1,0.004
+Adaptive Meng with probing,Without adaptation,1,0,1,1,0.004
+Adaptive Meng with probing,Memory and adaptation disabled,0,0,1,1,0.004
+Adaptive Meng with probing,Without probing,1,1,0,1,0.004
+Adaptive Meng with probing,Without accelerated return / previous,1,1,1,0,0.004

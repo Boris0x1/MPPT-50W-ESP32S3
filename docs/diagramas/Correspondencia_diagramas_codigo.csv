@@ -1,0 +1,223 @@
+﻿diagram,node_id,visible_label,source,function,line_start,line_end
+01_PO,start,"Start / reset with first V, I",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,init,"Initialize once
+D=0.4; started=false
+Vprev=V; Pprev=Pprev2=V I",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,read,"Read V, I, t
+P=V I; ΔP=P−Pprev; ΔV=V−Vprev",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,valid,"t ≥ 0.020 s
+and valid sample?",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,keep,Keep D,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,first,First perturbation?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,seed,"s=−1
+started=true",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,apply,"D ← clamp(D+s h, 0, 716/1024)",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,history,"Update histories
+Pprev2 ← Pprev; Pprev ← P; Vprev ← V",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,out,Return D; next call after 2 ms,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,dp,ΔP ≠ 0?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,sign,(ΔP > 0) = (ΔV > 0)?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,down,"s=−1
+Decrease duty",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,up,"s=+1
+Increase duty",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+01_PO,zero,"s=0
+Hold duty",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,start,"Start / reset with first V, I",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,init,"Initialize once
+D=0.4; started=false
+Vprev=V; Pprev=Pprev2=V I",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,read,"Read V, I, t
+P=V I; ΔP=P−Pprev; ΔV=V−Vprev",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,valid,"t ≥ 0.020 s
+and valid sample?",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,keep,Keep D,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,first,First perturbation?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,seed,"s=−1
+started=true",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,apply,"D ← clamp(D+s h, 0, 716/1024)",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,history,"Update histories
+Pprev2 ← Pprev; Pprev ← P; Vprev ← V",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,out,Return D; next call after 2 ms,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,oldi,"Iprev=Pprev / max(Vprev, 0.1)
+ΔI=I−Iprev",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,dv,|ΔV| > 0.0001 V?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,conductance,"g=I+V ΔI/ΔV
+ε=0.002 A",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,current,"g=ΔI
+ε=0.00001 A",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,compare,Compare g with ±ε,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,down,"s=−1
+Decrease duty",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,up,"s=+1
+Increase duty",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+02_INC,zero,"s=0
+Hold duty",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,start,"Start / reset with first V, I",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,init,"Initialize once
+D=0.4; started=false
+Vprev=V; Pprev=Pprev2=V I",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,read,"Read V, I, t
+P=V I; ΔP=P−Pprev; ΔV=V−Vprev",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,valid,"t ≥ 0.020 s
+and valid sample?",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,keep,Keep D,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,first,First perturbation?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,seed,"s=−1
+started=true",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,apply,"D ← clamp(D+s h, 0, 716/1024)",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,history,"Update histories
+Pprev2 ← Pprev; Pprev ← P; Vprev ← V",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,out,Return D; next call after 2 ms,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,dp,ΔP ≠ 0?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,prior,ΔPprev=Pprev−Pprev2 ≤ 0?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,sign,(ΔP > 0) = (ΔV > 0)?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,down,s=−1,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,up,s=+1,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,zero,s=0,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,adaptive,V/I step selected?,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,fixed,h=0.002,simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+03_Meng_original,vi,"h=clamp(0.002 V/max(I,0.001),
+0.002, 0.05)",simulacion_unificada/mppt_unificado_50w.m,localArticle,292,321
+04_Meng_VI_plus,start,Start / reset,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastLocal,362,378
+04_Meng_VI_plus,init,"Initialize D=0.4 and measurement histories
+started=false; paused=false; resume=−1",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastLocal,362,378
+04_Meng_VI_plus,read,"Read V, I, t; P=V I
+ΔP=P−Pprev; ΔV=V−Vprev",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastLocal,362,378
+04_Meng_VI_plus,valid,"t ≥ 0.020 s
+and valid sample?",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastLocal,362,378
+04_Meng_VI_plus,keep,Keep D,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastLocal,362,378
+04_Meng_VI_plus,new,New local step?,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,seed,"s=−1; ρ=1
+z=1; lastDir=−1
+paused=false; resume=−1",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,dv,|ΔV| > 0.0025 V?,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,slope,"s=−sign(ΔP/ΔV)
+ρ=min(1.5, |ΔP/ΔV|/max(I,0.05))",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,flat,s=resume; ρ=0.025,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,fallback,"If s=0, use resume
+If |ΔP|>max(0.5,0.12 P), z←max(z,0.5)",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,changed,s ≠ lastDir?,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,contract,"z←max(0.03,0.55 z)",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,expand,"z←min(1,1.12 z)",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,step,"r=√clamp((V/max(I,0.001))/Rn, 0.25, 4)
+h=clamp(κ r max(0.015,ρ) z, 0.00015, 0.040)
+If adaptation disabled, h=0.004",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,memory,"Not new, memory enabled
+and ρ < 0.50?",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,paused,Previous call paused?,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,product,ΔP ΔPprev ≤ 0?,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,pause,"resume←s; s←0
+paused←true",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,resume,paused←false,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,remember,"If s≠0, resume←s and lastDir←s",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastRule,379,416
+04_Meng_VI_plus,apply,"D←clamp(D+s h,0,716/1024)
+started←true",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastLocal,362,378
+04_Meng_VI_plus,hist,"Update ΔPprev, Pprev and Vprev",simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastLocal,362,378
+04_Meng_VI_plus,out,Return D; next call after 2 ms,simulacion_unificada/mejora_control/mppt_extendido_50w.m,fastLocal,362,378
+05_Sondeo_previo,reset,"Start / reset
+D=0.4; state=S0; initialize histories and timers",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+05_Sondeo_previo,s0,"S0 · WAIT
+Keep initial duty until t ≥ 0.020 s",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+05_Sondeo_previo,s4,"S4 · LOCAL REFINEMENT
+P&O local update; fill 32-sample window
+Test quietWindow after 120 ms",simulacion_unificada/mppt_unificado_50w.m,quietWindow,262,275
+05_Sondeo_previo,s3,"S3 · VOLTAGE HOLD
+Voltage servo; fast/slow change detector
+Evaluate audit and probing eligibility",simulacion_unificada/mppt_unificado_50w.m,voltageStep,276,283
+05_Sondeo_previo,s5,"S5 · LOCAL RECOVERY
+Voltage-lead servo around retained Vref",simulacion_unificada/mppt_unificado_50w.m,voltageStep,276,283
+05_Sondeo_previo,s1,"S1 · EXPLORATION
+Score separated, settled candidates
+Full audit: two ends; probe: one side",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+05_Sondeo_previo,s2,"S2 · RETURN AND CONFIRM
+Approach selected target; then voltage servo
+Confirm 8 settled samples or wait up to 260 ms",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,start,MPPT call / initialize once,simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,valid,"Valid sample and
+algorithm enabled?",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,keep,"Return current outputs
+Preserve histories and state",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,filter,"Update filters
+Advance S0 to S4 when t ≥ 20 ms",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,local,State S4?,simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,shared,"Execute the current shared state
+S0, S1, S2, S3 or S5
+Supervisor transitions in Diagram 5",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,window,"Append V, P, D to 32-sample window",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,first,First local decision?,simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,seed,"s=−1; localStarted=true
+prior ΔP=0; paused=false
+resume=−1",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,direction,"P&O Boolean sign rule
+If ΔP=0, set s=0",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,memory,Memory enabled?,simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,paused,Previous decision paused?,simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,resume,"Clear pause
+If s=0, use saved nonzero direction",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,prior,Previous local ΔP ≤ 0?,simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,pause,"Save nonzero direction
+s=0; paused=true",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,step,"If adaptation enabled:
+h=clamp(0.002 (V/max(I,0.001))/Rn,0.002,0.006)
+Otherwise h=0.002",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,apply,"Update prior ΔP and saved direction
+D←clamp(D+s h,0,716/1024)",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,quiet,"32 samples, ≥120 ms
+and quietWindow?",simulacion_unificada/mppt_unificado_50w.m,quietWindow,262,275
+06_Combinacion_base,hold,"Set Vref; D←Dcenter
+Update anchors; enter S3",simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,history,Update histories and diagnostic outputs,simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+06_Combinacion_base,out,Return D; next call after 2 ms,simulacion_unificada/mppt_unificado_50w.m,mppt_unificado_50w,1,261
+07_Combinacion_plus,start,MPPT call / initialize once,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,valid,"Valid sample and
+algorithm enabled?",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,keep,"Return current outputs
+Preserve histories and state",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,filter,Update filters; S0→S4 at t ≥20 ms,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,local,State S4?,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,kernel,"Call improved kernel (Diagram 4)
+κ=0.024; update ring and D
+If quiet after ≥80 ms: D←Dcenter; enter S3",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,fastRule,385,422
+07_Combinacion_plus,return,State S2?,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,shared,"Execute S0 / S1 / S3 / S5
+Diagram 5 supervisor; apply parameters below
+Hold, event recovery, probes and audits",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,approach,Approaching target duty?,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,fast,"Final policy enabled,
+returning to old measured reference,
+and targetD > D?",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,accelerated,Return limit = 0.100 per call,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,ordinary,Return limit = 0.030 per call,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,move,"D←D+clamp(targetD−D,−limit,+limit)
+Keep approach until |D−targetD|≤0.001",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,servo,"Voltage-lead servo
+gain 0.004; |ΔD|≤0.010
+Update settled-sample confirmation",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,voltageStep,320,327
+07_Combinacion_plus,done,"8 settled samples
+or elapsed time ≥260 ms?",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,failed,"New candidate AND
+(unconfirmed OR
+improvement ≤ margin)?",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,restore,"Restore incumbent reference / target
+Reset approach, timer and confirmation",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,old,"Previous reference confirmed
+and power within margin?",simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,hold,Enter S3; update anchors,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,refine,Enter S4; restart local window,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,hist,Clamp D; update histories / diagnostics,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+07_Combinacion_plus,out,Return D; next call after 2 ms,simulacion_unificada/mejora_control/mppt_combinacion_mejorada_50w.m,mppt_combinacion_mejorada_50w,1,305
+08_Ablaciones,start,Choose controller family and evaluated variant,simulacion_unificada/mejora_control/ejecutar_mejora.m,ejecutar_mejora,1,150
+08_Ablaciones,family,Controller family,simulacion_unificada/mejora_control/ejecutar_mejora.m,ejecutar_mejora,1,150
+08_Ablaciones,base,"Meng with probing / previous supervisor
+Mode 6; h0=0.002; step cap=0.006",simulacion_unificada/ejecutar_lote.m,ejecutar_lote,1,73
+08_Ablaciones,meng,"Adaptive Meng
+Mode 7; κ=0.032",simulacion_unificada/mejora_control/ejecutar_mejora.m,ejecutar_mejora,1,150
+08_Ablaciones,plus,"Adaptive Meng with probing
+Mode 8; κ=0.024",simulacion_unificada/mejora_control/ejecutar_retorno.m,ejecutar_retorno,1,70
+08_Ablaciones,flags,"Set M, A, S and F as applicable
+Use the configuration table below",simulacion_unificada/mejora_control/ejecutar_retorno.m,ejecutar_retorno,1,70
+08_Ablaciones,freeze,Freeze configuration and reset all persistent states,simulacion_unificada/mejora_control/ejecutar_retorno.m,ejecutar_retorno,1,70
+08_Ablaciones,run,"Run the corresponding controller diagram
+with common inputs, limits and sampling period",simulacion_unificada/mejora_control/ejecutar_retorno.m,ejecutar_retorno,1,70
+08_Ablaciones,out,Log controller outputs and state,simulacion_unificada/mejora_control/ejecutar_retorno.m,ejecutar_retorno,1,70
