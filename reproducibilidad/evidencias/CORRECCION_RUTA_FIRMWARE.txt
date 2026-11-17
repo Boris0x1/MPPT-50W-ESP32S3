@@ -1,0 +1,8 @@
+FIRMWARE PATH CORRECTION
+
+The active firmware location is firmware/MPPT_ESP32-S3_7_algoritmos/.
+The README, C replay runner and both integrity manifests use this location.
+All 85 file lookups and hashes passed in an isolated repository with that
+folder name. No firmware content or expected file hash was changed.
+Historical reports retain their original acquisition/review paths.
+The numerical replay was not repeated: only the repository path was corrected.

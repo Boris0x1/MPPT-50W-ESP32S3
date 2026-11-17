@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "matlab": "24.2.0.3361896 (R2024b) Update 10",
+  "seven_configurations": [
+    {
+      "controller": "P&O",
+      "profile": "X1_escalones_y_carga",
+      "prepared": true,
+      "simulated": false
+    },
+    {
+      "controller": "INC",
+      "profile": "X1_escalones_y_carga",
+      "prepared": true,
+      "simulated": false
+    },
+    {
+      "controller": "Meng V/I",
+      "profile": "X1_escalones_y_carga",
+      "prepared": true,
+      "simulated": false
+    },
+    {
+      "controller": "Adaptive Meng",
+      "profile": "X1_escalones_y_carga",
+      "prepared": true,
+      "simulated": false
+    },
+    {
+      "controller": "P&O with probing",
+      "profile": "X1_escalones_y_carga",
+      "prepared": true,
+      "simulated": false
+    },
+    {
+      "controller": "Adaptive Meng with probing",
+      "profile": "X1_escalones_y_carga",
+      "prepared": true,
+      "simulated": false
+    },
+    {
+      "controller": "Adaptive Meng without periodic probing",
+      "profile": "X1_escalones_y_carga",
+      "prepared": true,
+      "simulated": false
+    }
+  ],
+  "R9_prepared": true,
+  "new_plant_simulations": 0
+}

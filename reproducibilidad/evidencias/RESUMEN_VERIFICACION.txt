@@ -1,0 +1,20 @@
+PACKAGE VERIFICATION - 17 November 2026
+
+The package was tested against an isolated repository with the published
+simulacion/ and firmware/ layout and the original X1/X3 trace CSV under datos/.
+
+MATLAB logic replay: PASS; seven algorithms, 434098 updates, zero differences.
+Portable C replay: PASS; seven algorithms, 434098 updates, zero differences.
+Seven public C init/update/reset interfaces: PASS.
+Boundary, state separation and common PWM mapping tests: PASS.
+Simulink preparation in MATLAB R2024b: PASS; all seven fixed configurations
+on X1, plus the fixed additional R9 profile for the final controller.
+The prepared configurations and injected kernel text were checked against
+the published references. No switched-plant simulation was run for this test.
+No board was flashed or operated. No experimental measurements were generated.
+All generated test outputs are separate from the original acquisition files.
+
+These results verify the package workflow and the tested controller inputs.
+They do not certify hardware timing/calibration or universal superiority.
+The optional ejecutar_caso entry starts a NEW numerical plant run only when
+explicitly invoked; that new simulation was not run during package preparation.
