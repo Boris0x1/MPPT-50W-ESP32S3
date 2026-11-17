@@ -1,8 +1,0 @@
-estrategia_campana,selector_del_zip,estado,nota
-P&O ajustado,MPPT_PO,Presente,Revisar version y parametros
-INC ajustado,,No encontrado en selector,Solicitar implementacion real
-Meng V/I original,,No encontrado en selector,Solicitar implementacion real
-Meng V/I+,MPPT_MENG,Presente,Verificar equivalencia con campana
-Sondeo previo,,No encontrado en selector,Solicitar implementacion real
-Combinación+ final,MPPT_COMBINACION_FINAL,Presente,Verificar revision usada
-Combinación+ sin sondeo,,No encontrado en selector,Solicitar implementacion real
